@@ -13,15 +13,15 @@ function AudioPlayer() {
     const currentTrack = useSelector(SessionSelect.getCurrentTrack);
     const playing = useSelector(SessionSelect.getPlayingStatus);
     const level = useSelector(SessionSelect.getAudioLevel);
-    useEffect(() => {
-        // 1. using async/await
-        const updateCustomTracks = async () => {
-            const customTracks = await fetchCustomTracks();
-            sessionDispatch(forceUpdateCustomTracks({ customTracks }));
-        };
-        updateCustomTracks();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    // useEffect(() => {
+    //     // 1. using async/await
+    //     const updateCustomTracks = async () => {
+    //         const customTracks = await fetchCustomTracks();
+    //         sessionDispatch(forceUpdateCustomTracks({ customTracks }));
+    //     };
+    //     updateCustomTracks();
+    //     // eslint-disable-next-line react-hooks/exhaustive-deps
+    // }, []);
 
     const handleNextTrack = () => sessionDispatch(nextTrack());
     return (

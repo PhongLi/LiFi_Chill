@@ -59,15 +59,15 @@ function reducer(state, action) {
                 newSceneEffect =
                     action.payload.effect !== state.sceneEffect.effect
                         ? {
-                              ...state.sceneEffect,
-                              active: true,
-                              effect: action.payload.effect,
-                          }
+                            ...state.sceneEffect,
+                            active: true,
+                            effect: action.payload.effect,
+                        }
                         : {
-                              ...state.sceneEffect,
-                              active: !state.sceneEffect.active,
-                              effect: undefined,
-                          };
+                            ...state.sceneEffect,
+                            active: !state.sceneEffect.active,
+                            effect: undefined,
+                        };
 
             return { ...state, sceneEffect: newSceneEffect };
         }

@@ -130,7 +130,7 @@ function SaveTemplate() {
                     <div className={'py-6'}>
                         <h4 className={cx('title')}>Templates</h4>
                         <div className={cx('templates-list')}>
-                            {currentUser && templates.length > 0 ? (
+                            {currentUser && templates?.length > 0 ? (
                                 templates.map((template, index) => {
                                     return (
                                         <TemplateItem
@@ -195,8 +195,8 @@ function SaveTemplate() {
                                     icon={getEffectIcon(effect.type, true)}
                                     label={effect.name}
                                     level={effect.level}
-                                    changeScene={() => {}}
-                                    changeVol={() => {}}
+                                    changeScene={() => { }}
+                                    changeVol={() => { }}
                                     key={index}
                                     disabled
                                 />
