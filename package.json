@@ -1,5 +1,6 @@
 {
     "name": "lofi_chillhop",
+    "homepage": ".",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
