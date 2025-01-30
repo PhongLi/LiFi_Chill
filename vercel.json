@@ -2,8 +2,8 @@
     "outputDirectory": "build",
     "rewrites": [
         {
-            "src": "/(.*)",
-            "dest": "/"
+            "source": "/(.*)",
+            "destination": "/"
         }
     ]
 }
