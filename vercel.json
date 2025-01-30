@@ -1,8 +1,9 @@
 {
-    "redirects": [
+    "outputDirectory": "build",
+    "rewrites": [
         {
-            "source": "/(.*)",
-            "destination": "build/index.html"
+            "src": "/(.*)",
+            "dest": "/"
         }
     ]
 }
